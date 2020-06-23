@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.App {
+  text-align: center;
+  font-size: 20px;
+  background-color: #f4f6f8 !important;
+}
+
+.header{
+  padding: 20px !important;
+  margin-top: 40px;
+  background: #f4eeff;
+  border-radius: 5px;
+  color: #333333 !important;
+  font-weight: bold;
+  font-size: 16px !important;
+}
+
+body {
+  font-family: "Roboto" !important;
+  /* font-family: 'Open Sans'; */
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 150%;
+  color: #14132c;
+  background-color: #f4f6f8 !important;
+  min-height: 100%;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  font-family: "Montserrat", serif;
+  color: black;
+}
+
+form {
+  margin-top: 5px;
+  padding-top: 20px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  padding: 6px;
+  background-color: white;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  resize: none !important;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: border-bottom 0.2s;
+  cursor: pointer;
+}
+
+
+textarea:focus {
+  outline: none;
+   border: none;
+   background-color: rgba(239, 228, 247, 0.5);
+  border-bottom: 2px solid #d1d1d1;
+}
+
+
+.recipe-cards {
+  margin: auto;
+  margin-top: 40px;
+  width: 100%;
+  align-items: left;
+  text-align: left;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #333333;
+  border-radius: 5px;
+  border: 0;
+}
+
+input[type="submit"]  {
+  margin: auto;
+  margin-top: 20px;
+  background: white;
+  border: 0.5;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: block;
+}
+
+input[type="date"]:focus {
+  border-bottom: 2px solid #d1d1d1;
+  outline: none;
+}
+
+
