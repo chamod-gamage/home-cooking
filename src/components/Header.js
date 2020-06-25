@@ -5,12 +5,6 @@ const Header = () => {
   const { recipes } = useContext(RecipeContext);
   return (
     <div className="container mt-5">
-      {/* <div className="row">
-        <span className="heart-falling">&#10084;</span>
-        <span className="heart-falling">&#10084;</span>
-        <span className="heart-falling">&#10084;</span>
-        <span className="heart-falling">&#10084;</span>
-      </div> */}
       <div className="row">
         <div className="col">
           { recipes?.length > 0 && (recipes?.length > 1 ? <h2>I've cooked {recipes?.length} things!</h2> : <h2>I've cooked {recipes?.length} thing!</h2>)}
