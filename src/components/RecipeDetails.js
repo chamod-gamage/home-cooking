@@ -34,7 +34,7 @@ const RecipeDetails = ({ recipe }) => {
           {recipe?.steps?.map((step) => {
           return(
             <div>
-              <li style = {{textAlign: "left"}}>
+              <li style = {{textAlign: "left", overflowWrap: "break-word"}}>
                 {step}
               </li>
             </div>
@@ -83,7 +83,7 @@ const RecipeDetails = ({ recipe }) => {
             }
           >
             <Card.Section>
-              {!edit ? renderBody() : <RecipeForm title = {title} description = {description} steps = {steps} date = {date}/>}
+              {!edit ? renderBody() : <RecipeForm button = {false} title = {title} description = {description} steps = {steps} date = {date}/>}
             </Card.Section>
           </Card>
         </div>

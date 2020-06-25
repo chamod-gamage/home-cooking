@@ -129,7 +129,7 @@ const RecipeForm = (props) => {
         </div>
       {/* </div> */}
       
-      <input type="submit"  value={props.button} />
+      {props.button && <input type="submit"  value={props.button} />}
       <div style = {{height: 10}}/>
     </form>
   );
