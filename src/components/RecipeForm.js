@@ -38,22 +38,35 @@ const RecipeForm = (props) => {
   
   return (
     <form onSubmit={handleSubmit} style = {{backgroundColor: "#EFEFFF"}}>
-      {/* <div className="row"> */}
+      <div className = "col-12">
+        <div className="row">
         
         
-        <div className="col-9">
-          {SectionHead('Title')}
-          <textarea className="text_edit"
-          name="textarea"
-          rows="1"
-          cols="5"
-          placeholder="Give your recipe a title!"
-          value={title}
-          onChange={e => setTitle(e.target.value)}
-          required
-        />
+          <div className="col-9">
+            {SectionHead('Title')}
+            <textarea className="text_edit"
+            name="textarea"
+            rows="1"
+            cols="5"
+            placeholder="Give your recipe a title!"
+            value={title}
+            onChange={e => setTitle(e.target.value)}
+            required
+          />
+          </div>
+          <div class="col-3">
+          {SectionHead('Date')}
+            <input
+            type="date"
+            placeholder="date"
+            value={date}
+            onChange={e => setDate(e.target.value)}
+            required
+          />
+          </div>
         </div>
-        <div className="col-9">
+      </div>
+        <div className="col-12">
           {SectionHead('Description')}
           <textarea className="text_edit"
           name="textarea"
@@ -92,7 +105,7 @@ const RecipeForm = (props) => {
               })}
             </ol>
           {/* </div> */}
-          <div style = {{float: "right"}}><h2>Step {counter + 1}</h2></div>
+          
           <textarea className="text_edit"
           name="textarea"
           rows="4"
@@ -113,20 +126,11 @@ const RecipeForm = (props) => {
           }}
           onChange={e => e.keyCode != 13 && setCurrentStep(e.target.value)}
         />
-        
 
 
         </div>
-        <div class="col-3">
-        {SectionHead('Date')}
-          <input
-          type="date"
-          placeholder="date"
-          value={date}
-          onChange={e => setDate(e.target.value)}
-          required
-        />
-        </div>
+        <div className = "col-12" style = {{textAlign: "right"}}><h2>Step {counter + 1}</h2></div>
+  
       {/* </div> */}
       
       {props.button && <input type="submit"  value={props.button} />}
