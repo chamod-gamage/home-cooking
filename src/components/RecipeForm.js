@@ -111,7 +111,7 @@ const RecipeForm = (props) => {
               console.log(steps)
             }
           }}
-          onChange={e => e.keyCode != 13 && setCurrentStep(e.target.value.trim())}
+          onChange={e => e.keyCode != 13 && setCurrentStep(e.target.value)}
         />
         
 
