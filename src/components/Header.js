@@ -7,7 +7,9 @@ const Header = () => {
     <div className="container mt-5">
       <div className="row">
         <div className="col">
-          { recipes?.length > 0 && (recipes?.length > 1 ? <h2>I've cooked {recipes?.length} things!</h2> : <h2>I've cooked {recipes?.length} thing!</h2>)}
+          <h2>🍔</h2>
+          <div style = {{height: 10}}/>
+          { recipes?.length > 0 && (recipes?.length > 1 ? <h2> I've cooked {recipes?.length} things!</h2> : <h2>I've cooked {recipes?.length} thing!</h2>)}
           {(recipes?.length <= 0 || !recipes) && (
             <h2>Take the hassle out of recipe management...</h2>
           )}
