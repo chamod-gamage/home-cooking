@@ -22,6 +22,7 @@ const RecipeForm = (props) => {
     setTitle('')
     setSteps([]);
     setCurrentStep('');
+    setCounter(0)
   };
 
   const SectionHead = (label) => {
