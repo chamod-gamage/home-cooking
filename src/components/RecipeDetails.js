@@ -34,12 +34,14 @@ const RecipeDetails = ({ recipe }) => {
           {recipe?.steps?.map((step) => {
           return(
             <div>
+              <div style = {{height: 10}}/>
               <li style = {{textAlign: "left", overflowWrap: "break-word"}}>
                 {step}
-              </li>
+              </li>             
             </div>
           )})}
         </ol>
+        <div style = {{height: 10}}/>
       </div>
       </Fragment>
     );

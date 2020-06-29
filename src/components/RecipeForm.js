@@ -89,17 +89,22 @@ const RecipeForm = (props) => {
                 if (index == counter) { 
                   return(//Write some css
                     <div style = {{backgroundColor: "#FFFFCF", overflowWrap: "break-word", cursor: "pointer"}}> 
+                      <div style = {{height: 2}}/>
                       <li style = {{textAlign: "left"}} onClick = {() => {setCurrentStep(step); setCounter(index)}}>
                         {step}
                       </li>
+                      
                     </div>
                   ) 
                   } else {
                     return(
                       <div style = {{ overflowWrap: "break-word", cursor: "pointer"}}>
+                        <div style = {{height: 5}}/>
                         <li style = {{textAlign: "left"}} onClick = {() => {setCurrentStep(step); setCounter(index)}}>
                           {step}
                         </li>
+                        
+
                       </div>
                     )
                   }
