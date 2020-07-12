@@ -84,7 +84,7 @@ const RecipeForm = (props) => {
             {SectionHead('Procedure')}
           {/* </div> */}
           {/* <div className = "col-12"> */}
-            <ol>
+            <ol style = {{maxHeight: 250, overflowY: "scroll"}}>
               {steps.map((step, index) => {
                 if (index == counter) { 
                   return(//Write some css
@@ -119,7 +119,8 @@ const RecipeForm = (props) => {
           placeholder= {stepPlaceholder}
           value={currentStep}
           onKeyDown={e => {
-            if (e.keyCode === 13) {
+            if (e.keyCode === 13 && !e.shiftKey) {
+              e.preventDefault()
               if (currentStep.match(/.*\S.*/)) {
                 newSteps = steps
                 newSteps[counter] = e.target.value.trim()
